@@ -183,8 +183,8 @@ public class HeartMonitor
             System.out.println("\nColumns for " + table);
             Statement statement = conn.createStatement();
             ResultSet res = statement
-                .executeQuery("SELECT sql FROM sqlite_master WHERE tbl_name = '"
-                    + table + "' AND type = 'table'");
+                .executeQuery("SELECT sql FROM sqlite_master "
+                    + "WHERE tbl_name = '" + table + "' AND type = 'table'");
             // This returns one item with column information in parentheses
             String s = res.getString(1);
             // Could probably use regex here
