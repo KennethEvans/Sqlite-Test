@@ -7,7 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.text.SimpleDateFormat;
 
-/*ftest
+/* HeartMonitor
  * Created on Nov 12, 2011
  * By Kenneth Evans, Jr.
  */
