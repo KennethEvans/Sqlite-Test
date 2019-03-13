@@ -262,7 +262,7 @@ public class Test1
         // SQLite.Database db = null;
         try {
             // Initialize the JDBC driver
-            Class.forName(driverClass).newInstance();
+            Class.forName(driverClass).getDeclaredConstructor().newInstance();
         } catch(Exception ex) {
             System.out.println("Failed to initialize " + driverClass);
             return;
